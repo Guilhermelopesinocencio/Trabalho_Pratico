@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.collections.ObservableList?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+
+
+
+
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
@@ -162,14 +172,17 @@
             </VBox>
          </children>
       </HBox>
-      <TableView prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #1E1F22;">
-        <columns>
-          <TableColumn prefWidth="75.0" style="-fx-background-color: #2B2D30;" text="ID" />
-          <TableColumn prefWidth="295.0" style="-fx-background-color: #2B2D30;" text="NOME" />
-            <TableColumn prefWidth="92.33334350585938" style="-fx-background-color: #2B2D30;" text="ALTURA" />
-            <TableColumn prefWidth="102.33331298828125" style="-fx-background-color: #2B2D30;" text="PESO" />
-            <TableColumn prefWidth="105.0" style="-fx-background-color: #2B2D30;" text="IMC" />
-        </columns>
-      </TableView>
+       <!-- Essa foi a mudança na tela do hístorico -->
+       <TableView fx:id="tabelaPessoas" prefWidth="670.0" VBox.vgrow="ALWAYS">
+           <columns>
+               <TableColumn fx:id="colId" prefWidth="60.0" text="ID" />
+               <TableColumn fx:id="colNome" prefWidth="200.0" text="Nome" />
+               <TableColumn fx:id="colAltura" prefWidth="120.0" text="Altura" />
+               <TableColumn fx:id="colPeso" prefWidth="120.0" text="Peso" />
+               <TableColumn fx:id="colIMC" prefWidth="150.0" text="IMC" />
+               <TableColumn fx:id="colClassificacao" prefWidth="180.0" text="Classificação" />
+           </columns>
+       </TableView>
+       <!-- Essa foi a mudança na tela do hístorico -->
    </children>
 </VBox>

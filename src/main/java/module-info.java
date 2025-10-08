@@ -3,7 +3,9 @@ module org.sysimc {
     requires javafx.fxml;
 
     opens org.sysimc.controller to javafx.fxml;
-
+    //----------------------------------------------------
+    opens org.sysimc.model to javafx.base;
+    //----------------------------------------------------
     opens org.sysimc to javafx.fxml;
     exports org.sysimc;
     exports org.sysimc.controller;
