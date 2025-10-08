@@ -1,0 +1,4 @@
+1,Guilherme Lopes,170.0,76.0,26.30,Sobrepeso
+2,Pedro Henrique,165.0,59.0,21.68,Peso normal
+3,Sofia de Paula,154.0,68.0,28.67,Sobrepeso
+4,Liz da costa,189.0,69.0,19.32,Peso normal
